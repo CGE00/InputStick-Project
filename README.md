@@ -85,3 +85,10 @@ exit
 
 - [ViejoFraile](https://www.youtube.com/channel/UCjEd3L5Rs8qfvA92ADvchAw)
 - [El Pinguino de Mario](https://www.youtube.com/@ElPinguinoDeMario)
+
+## Aviso importante
+
+Este proyecto está pensado únicamente para entornos de prueba y fines educativos (laboratorios, prácticas, etc.).  
+Está totalmente prohibido utilizarlo en sistemas o redes sobre las que no tengas permiso explícito.  
+El autor no se hace responsable del uso ilegal o malintencionado de este código.
+
